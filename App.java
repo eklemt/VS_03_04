@@ -12,6 +12,7 @@ public class App
 {
     public static void main(String[] args)
     {
+        /*
         ArrayList<String> data = new ArrayList<>();
 
         for(int i = 3; i < 17; i++) {
@@ -32,5 +33,16 @@ public class App
         } catch (IOException e) {
             System.err.println("Error writing to file: " + e.getMessage());
         }
+        */
+
+        UseCaseTable ucs= new UseCaseTable(
+                InputCase.RANDOM,
+                SortAlgo.SELECT,
+                3,
+                16,
+                Streaming.PAR
+        );
+
+        System.out.println(ucs); // ruft toString-methode auf UseCase-Objekt auf!
     }
 }

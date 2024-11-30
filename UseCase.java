@@ -12,7 +12,7 @@ import java.util.Collections;
  * @author Wolfgang Renz, student name
  * @version Nov. 24, 2024, finalization date
  */
-public class UseCase
+public class UseCase implements UseCaseInterface
 {
     private int size;
     private InputCase start;
@@ -93,6 +93,10 @@ public class UseCase
         cmp = sortAlgo.getCmp();
         cpy = sortAlgo.getCpy();
 
+    }
+
+    public int getComp() {
+        return this.cmp;
     }
 
     @Override
