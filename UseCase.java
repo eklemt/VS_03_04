@@ -99,6 +99,6 @@ public class UseCase
     public String toString()
     {
         // to be improved to return formatted output
-        return  "Ergebnis für"+ " " + algo +".sort eines random arrays der Größe 16 ist\n" + algo + "\t" + start + "\t" + size + "\t" + cmp + "\t" + cpy;
+        return  algo + ";" + start + ";" + size + ";" + cmp + ";" + cpy;
     }
 }
