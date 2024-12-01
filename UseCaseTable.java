@@ -29,10 +29,11 @@ public class UseCaseTable {
         // generates stream of ascending int-s:
         IntStream stream = IntStream.rangeClosed(from, to); // default SEQ
         // InputCase.AVERAGE has to use parallel streaming for sampling random fields!
-        this.stream = (how == Streaming.SEQ || start == InputCase.AVERAGE) ? stream.parallel() : stream; // FIX: changed this condition
+        this.stream = (how == Streaming.SEQ || start == InputCase.AVERAGE) ? stream : stream.parallel();
     }
 
     public String generateTable() {
+
         long startTime = System.currentTimeMillis();
         String result = stream
                 .map(k -> (int) (Math.pow(2, k) + 1e-15)) // size n = integer powers of 2

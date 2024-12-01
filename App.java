@@ -35,12 +35,12 @@ public class App
         }
         */
 
-        UseCaseTable ucs= new UseCaseTable(
-                InputCase.RANDOM,
+        UseCaseTable ucs = new UseCaseTable(
+                InputCase.AVERAGE,
                 SortAlgo.SELECT,
                 3,
                 16,
-                Streaming.PAR
+                Streaming.SEQ
         );
 
         System.out.println(ucs); // ruft toString-methode auf UseCase-Objekt auf!
