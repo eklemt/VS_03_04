@@ -40,7 +40,7 @@ public class App
                 SortAlgo.SELECT,
                 3,
                 16,
-                Streaming.SEQ
+                Streaming.PAR
         );
 
         System.out.println(ucs); // ruft toString-methode auf UseCase-Objekt auf!

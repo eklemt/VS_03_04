@@ -15,11 +15,9 @@ public class AvgUseCase implements UseCaseInterface {
         this.algo = algo;
         this.compareCounts = IntStream.range(0, sampleSize)
                 .parallel() // Ensure parallel processing
-                .map(k -> (int) (Math.pow(2, k) + 1e-15))
                 .mapToObj(j -> {
                     System.out.println("Processing sample " + (j + 1) + " of " + sampleSize);
-                    int randomSize = randomSize();
-                    return UseCaseInterface.generate(randomSize, InputCase.RANDOM, algo);
+                    return UseCaseInterface.generate(size, InputCase.RANDOM, algo);
                 })
                 .mapToLong(uc -> {
                     return ((UseCase) uc).getComp(); // Cast to UseCase to access getComp
