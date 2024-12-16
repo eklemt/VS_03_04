@@ -34,10 +34,12 @@ public class App
             System.err.println("Error writing to file: " + e.getMessage());
         }
         */
+        // Merge, Insert, Select -> Best vs. Worst case
+        //SORTED, REVERSE, RANDOM,
 
         UseCaseTable ucs = new UseCaseTable(
                 InputCase.AVERAGE,
-                SortAlgo.SELECT,
+                SortAlgo.QUICK,
                 3,
                 16,
                 Streaming.PAR

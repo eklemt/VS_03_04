@@ -10,7 +10,7 @@ public interface UseCaseInterface {
 
     static UseCaseInterface generate(int size, InputCase start, SortAlgo algo) {
         if (start == InputCase.AVERAGE) {
-            return new AvgUseCase(size, start, algo, 40);
+            return new AvgUseCase(size, start, algo, 1000);
         } else {
             return new UseCase(size, start, algo);
         }

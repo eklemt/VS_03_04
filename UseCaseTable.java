@@ -37,7 +37,12 @@ public class UseCaseTable {
         long startTime = System.currentTimeMillis();
         String result = stream
                 .map(k -> (int) (Math.pow(2, k) + 1e-15)) // size n = integer powers of 2
-                .mapToObj(n -> UseCaseInterface.generate(n, start, algo)) // generates UseCase of size n
+                .mapToObj(n -> {
+                    System.out.println("-----------");
+                    System.out.println("Row: " + n);
+                    System.out.println("-----------");
+                    return UseCaseInterface.generate(n, start, algo);
+                }) // generates UseCase of size n
                 .map(uc -> uc.toString())
                 .collect(Collectors.joining("\n"));
 

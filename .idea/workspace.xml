@@ -7,6 +7,9 @@
     <list default="true" id="173d7d1c-93f7-4e6d-9ef1-1ad242b94628" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvgUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/AvgUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UseCaseInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/UseCaseInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UseCaseTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/UseCaseTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VS_03_04/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VS_03_04/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VS_03_04/AvgUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VS_03_04/AvgUseCase.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +128,9 @@
       <workItem from="1732995895227" duration="14498000" />
       <workItem from="1733073188727" duration="7000" />
       <workItem from="1733073307761" duration="2521000" />
-      <workItem from="1733169446447" duration="1375000" />
+      <workItem from="1733169446447" duration="3594000" />
+      <workItem from="1733488290749" duration="3590000" />
+      <workItem from="1734368742299" duration="7277000" />
     </task>
     <servers />
   </component>
