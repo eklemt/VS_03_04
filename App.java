@@ -39,10 +39,10 @@ public class App
 
         UseCaseTable ucs = new UseCaseTable(
                 InputCase.AVERAGE,
-                SortAlgo.QUICK,
+                SortAlgo.INSERT,
                 3,
-                16,
-                Streaming.PAR
+                14,
+                Streaming.SEQ
         );
 
         System.out.println(ucs); // ruft toString-methode auf UseCase-Objekt auf!

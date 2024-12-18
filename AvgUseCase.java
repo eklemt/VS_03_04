@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.DoubleSummaryStatistics;
 import java.util.List;
+import java.util.LongSummaryStatistics;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -17,10 +19,10 @@ public class AvgUseCase implements UseCaseInterface {
         this.algo = algo;
         this.compareCounts = IntStream.range(0, sampleSize)
                 .mapToObj(j -> {
-                    long startTime = System.currentTimeMillis();
+                    //long startTime = System.currentTimeMillis();
                     UseCase uc = (UseCase) UseCaseInterface.generate(size, InputCase.RANDOM, algo);
-                    long endTime = System.currentTimeMillis(); // End time
-                    executionTimes.add(endTime - startTime); // Record execution time
+                    //long endTime = System.currentTimeMillis(); // End time
+                    //executionTimes.add(endTime - startTime); // Record execution time
                     return uc;
                 })
                 .mapToLong(uc -> {
@@ -46,14 +48,20 @@ public class AvgUseCase implements UseCaseInterface {
 
     @Override
     public String toString() {
+        LongSummaryStatistics stats = compareCounts.stream()
+                .mapToLong(Long::longValue)
+                .summaryStatistics();
+        double mean1 = stats.getAverage();
+
+
         double mean = compareCounts.stream().mapToLong(Long::longValue).average().orElse(0);
         long upperLimit = compareCounts.stream().mapToLong(Long::longValue).max().orElse(0);
         long lowerLimit = compareCounts.stream().mapToLong(Long::longValue).min().orElse(0);
         long range = compareCounts.stream().mapToLong(Long::longValue).max().orElse(0)
                 - compareCounts.stream().mapToLong(Long::longValue).min().orElse(0);
-        double averageExecutionTime = executionTimes.stream().mapToLong(Long::longValue).average().orElse(0);
+        //double averageExecutionTime = executionTimes.stream().mapToLong(Long::longValue).average().orElse(0);
 
 
-        return "AVERAGE; " + mean + ";" + lowerLimit + ";" + upperLimit + ";" + range + ";" + averageExecutionTime;
+        return "AVERAGE; " + mean + ";" + lowerLimit + ";" + upperLimit + ";" + range + ";";
     }
 }

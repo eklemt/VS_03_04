@@ -30,6 +30,8 @@ public class UseCaseTable {
         IntStream stream = IntStream.rangeClosed(from, to); // default SEQ
         // InputCase.AVERAGE has to use parallel streaming for sampling random fields!
         this.stream = (how == Streaming.SEQ || start != InputCase.AVERAGE) ? stream : stream.parallel();
+
+
     }
 
     public String generateTable() {

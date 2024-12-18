@@ -7,10 +7,8 @@
     <list default="true" id="173d7d1c-93f7-4e6d-9ef1-1ad242b94628" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvgUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/AvgUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseCaseInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/UseCaseInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quick.java" beforeDir="false" afterPath="$PROJECT_DIR$/Quick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UseCaseTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/UseCaseTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VS_03_04/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VS_03_04/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VS_03_04/AvgUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VS_03_04/AvgUseCase.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Time_per_sample" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -52,29 +55,29 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.SortingTest.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/private/Desktop/Projects/PR2/VS_03_04&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.SortingTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/private/Desktop/Projects/PR2/VS_03_04",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -130,7 +133,9 @@
       <workItem from="1733073307761" duration="2521000" />
       <workItem from="1733169446447" duration="3594000" />
       <workItem from="1733488290749" duration="3590000" />
-      <workItem from="1734368742299" duration="7277000" />
+      <workItem from="1734368742299" duration="7379000" />
+      <workItem from="1734463038747" duration="16000" />
+      <workItem from="1734463059436" duration="16511000" />
     </task>
     <servers />
   </component>
